@@ -7,3 +7,7 @@ CREATE TABLE [dbo].[BuildStaging]
 [Version] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
+DECLARE @xp int
+SELECT @xp=1
+EXEC sp_addextendedproperty N'PKException', @xp, 'SCHEMA', N'dbo', 'TABLE', N'BuildStaging', NULL, NULL
+GO

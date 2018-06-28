@@ -8,3 +8,5 @@ CREATE TABLE [dbo].[SQLServerBuilds]
 [SQLServerVersion] [varchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
+ALTER TABLE [dbo].[SQLServerBuilds] ADD CONSTRAINT [SQLServerBuildsPK] PRIMARY KEY CLUSTERED  ([BuildKey]) ON [PRIMARY]
+GO
